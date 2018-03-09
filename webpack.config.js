@@ -8,7 +8,9 @@ module.exports = {
     main: "./src/index.js"
   },
   devServer: {
+    disableHostCheck: true,
     hot: true,
+    host: '0.0.0.0',
     contentBase: resolve(__dirname),
     publicPath: "/"
   },
